@@ -1,0 +1,152 @@
+body{
+  margin:0 auto;
+  overflow-x: hidden;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.about_us{
+  background-color: #343a40;
+  width:100%;
+  height:400px;
+
+}
+.about_us img{
+  width: 75%;
+   /* margin: 92px; */
+  margin-top: 5%;
+  margin-left: 15%;
+  transition : width 1s;
+  transition-timing-function:ease;
+}
+
+.about_us img:hover{
+  width:80%;
+}
+.about_us p{
+  color: white;
+  text-align: left;
+  margin-top: 4%;
+}
+.about_us h1{
+  color:white;
+}
+.transition{
+  background-color: #343a40;
+  width:100%;
+  height:300px ;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.transition .left{
+  width: 100%;
+  height: 300px;
+  padding:0px;
+  z-index:1;
+  transition: z-index , transform 2s;
+  position: absolute;
+}
+.transition .right{
+  width: 100%;
+  height: 300px;
+  padding:0px;
+  z-index:1;
+  transition: z-index, transform 2s;
+  position: absolute;
+}
+.transition .col-md-6{
+  padding: 0px;
+}
+/*.transition .left:hover {
+  z-index: 10;
+  transform: scaleX(1.3);
+}
+.transition .right:hover{
+  z-index: 10;
+  transform: scaleX(1.3);
+
+}*/
+.btn{
+  top: 42%;
+  position: absolute;
+  left: 43%;
+  z-index: 20;
+  width: 15%;
+  color: white;
+  background-color: #556c84;
+  box-shadow: 5px 8px 4px 0px #192529;
+}
+.ileft,.iright{
+  padding:0px 25px;
+
+}
+.btn-default{
+  top: 0%;
+  position: static;
+
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  background-color: #212529;
+  margin-top: 0%;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 25%;
+    margin: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 34px;
+    height: 354px;
+    border-radius: 25px;
+    box-shadow: 13px 12px 11px grey;
+    transition:width 1s;
+}
+.img{
+
+      height: 272px;
+
+}
+.flex-container > div:hover{
+
+    width:28%;
+
+}
+h3{
+  color:white;
+  background-color: #212529;
+  margin-top: 4%;
+  margin-bottom: 0px;
+
+}
+
+/* @media query */
+@media only screen and (max-width: 1000px ) {
+
+    .btn{
+      width: 25%;
+      left: 38%;
+    }
+    .ileft,.iright{
+      padding:0px 5px;
+
+    }
+        .ileft,.iright{
+      padding:0px 5px;
+
+    }
+    .flex-container > div {
+    width: 64%;
+    }
+}
+
